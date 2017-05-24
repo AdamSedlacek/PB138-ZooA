@@ -1,10 +1,33 @@
+import React, { Component } from 'react';
+import { AppRegistry } from 'react-native';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+
+import AppReducer from './reducers';
+import AppWithNavigationState from './navigation';
+
+export default class zobro2 extends Component {
+  store = createStore(AppReducer);
+
+  render() {
+    return (
+      <Provider store={this.store}>
+        <AppWithNavigationState />
+      </Provider>
+    );
+  }
+}
+
+AppRegistry.registerComponent('zobro2', () => zobro2);
+
 /**
  * Sample React Native App
  * https://github.com/facebook/react-native
  * @flow
  */
 
-/**import React, { Component } from 'react';
+/**
+import React, { Component } from 'react';
 import {
   AppRegistry,
   StyleSheet,
@@ -50,17 +73,8 @@ const styles = StyleSheet.create({
   },
 });
 
-AppRegistry.registerComponent('zobro2', () => zobro2);  **/
+AppRegistry.registerComponent('zobro2', () => zobro2);  
+*/
 
-import React, { Component } from 'react';
-import { AppRegistry, Text } from 'react-native';
 
-class HelloWorldApp extends Component {
-  render() {
-    return (
-      <Text>Hello world!</Text>
-    );
-  }
-}
 
-AppRegistry.registerComponent('HelloWorldApp', () => HelloWorldApp);
