@@ -6,6 +6,10 @@ import InPageImage from '../inPageImage';
 import AnimalText from '../animalText';
 import AnimalTemplate from '../animalTemplate';
 
+import AnimalSound from '../animalSound';
+import TextSound from '../textSound';
+import Facebook from '../shareButtonFacebook.js';
+
 const IMAGES = [
   require('../../images/animals/alpaka/01.jpg'),
   require('../../images/animals/alpaka/02.jpg'),
@@ -22,6 +26,11 @@ var AnimalDetail = React.createClass({
   render() {
     return (
       <AnimalTemplate firstIndex={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
+        
+        <AnimalSound />
+        <TextSound />
+        <TextSound />
+     
         <AnimalText>
           Rodina lam alpak (<Text style={styles.italic}>Vicugna pacos</Text>) bydlí na tomto místě od roku 2009. Tehdy se stal vůdcem stáda samec Marcel z&nbsp;německé Zoo Stuttgart. Ukázalo se, že je to skutečně dobrý plemeník, a tak hned druhý rok přivedlo několik samic na svět mládě.
         </AnimalText>
