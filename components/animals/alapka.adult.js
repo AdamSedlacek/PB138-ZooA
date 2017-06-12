@@ -8,7 +8,7 @@ import AnimalTemplate from '../animalTemplate';
 
 import AnimalSound from '../animalSound';
 import TextSound from '../textSound';
-import Facebook from '../shareButtonFacebook.js';
+import FacebookShare from '../shareButtonFacebook.js';
 
 const IMAGES = [
   require('../../images/animals/alpaka/01.jpg'),
@@ -28,7 +28,7 @@ var AnimalDetail = React.createClass({
       <AnimalTemplate firstIndex={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
         
         <AnimalSound />
-        <TextSound />
+        <FacebookShare />
         <TextSound />
      
         <AnimalText>
