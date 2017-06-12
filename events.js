@@ -1,0 +1,14 @@
+export default events = [
+  { nid: 1, id: 'ledved1030', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Medvěd lední', time: '14:30', weekdays: [0,3,5,6], place: 'Expozice ledních medvědů', thumbnail: require('./images/animals/medvedLedni/01-thumb.jpg'), text: 'Lorem ipsum'},
+  { nid: 2, id: 'kamcat1030', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Medvěd kamčatský', time: '14:30', weekdays: [1,4], place: 'Beringie', thumbnail: require('./images/animals/medvedKamcatsky/01-thumb.jpg'), text: 'Lorem ipsum'},
+  { nid: 3, id: 'kamcat1200', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Medvěd kamčatský', time: '12:00', weekdays: [5,6], place: 'Beringie', thumbnail: require('./images/animals/medvedKamcatsky/01-thumb.jpg'), text: 'Lorem ipsum'},
+  { nid: 4, id: 'lachtan1100', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Lachtan medvědí', time: '11:00', weekdays: [4,5,6], place: 'Expozice lachtanů', thumbnail: require('./images/animals/lachtanMedvedi/01-thumb.jpg'), text: 'Lorem ipsum'},
+  { nid: 5, id: 'simpanz1130', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Šimpanz', time: '11:30', weekdays: [5,6], place: 'Pavilon opic', thumbnail: require('./images/animals/simpanz/03.jpg'), text: 'Lorem ipsum'},
+//  { id: 'kotul1400', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Kotul veverovitý', time: '14:00', weekdays: [0,6], place: 'Exotárium', thumbnail: require('./images/animals/kotul/01.jpg'), text: 'Lorem ipsum'},
+//  { id: 'drapkate1430', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Drápkaté opice', time: '14:30', weekdays: [0,6], place: 'Tropické království', thumbnail: require('./images/animals/kosman/01.jpg'), text: 'Lorem ipsum'},
+  { nid: 6, id: 'panda1100', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Panda červená', time: '11:00', weekdays: [0], place: 'Expozice pandy červené', thumbnail: require('./images/animals/pandaCervena/01-thumb.jpg'), text: 'Lorem ipsum'},
+  { nid: 7, id: 'tygr1000', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Tygr sumaterský', time: '10:00', weekdays: [1,3,5], place: 'Tygří skály', thumbnail: require('./images/animals/tygrSumatersky/01-thumb.jpg'), text: 'Lorem ipsum'},
+  { nid: 8, id: 'surikata1030', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Surikaty', time: '10:30', weekdays: [2], place: 'Expozice surikat', thumbnail: require('./images/animals/surikata/01-thumb.jpg'), text: 'Lorem ipsum'},
+  { nid: 9, id: 'zirafa1400', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Žirafy', time: '14:00', weekdays: [0,4,5,6], place: 'Africká vesnice', thumbnail: require('./images/animals/zirafaSitovana/01-thumb.jpg'), text: 'Lorem ipsum'},
+  { nid: 10, id: 'lemur1130', startDate: '2017-03-15', endDate: '2017-09-30', name: 'Lemur kata', time: '11:30', weekdays: [1,2,3], place: 'Africká vesnice', thumbnail: require('./images/animals/lemurKata/01-thumb.jpg'), text: 'Lorem ipsum'},
+];
