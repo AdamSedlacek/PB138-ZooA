@@ -1,0 +1,78 @@
+import React, { Component } from 'react';
+import { Text } from 'react-native';
+
+import styles from '../../styles/styles';
+import InPageImage from '../inPageImage';
+import AnimalText from '../animalText';
+import AnimalTemplate from '../animalTemplate';
+
+const IMAGES = [
+  require('../../images/animals/manul/01.jpg'),
+  require('../../images/animals/manul/02.jpg'),
+  require('../../images/animals/manul/03.jpg'),
+];
+
+const THUMBNAILS = [
+  require('../../images/animals/manul/01-thumb.jpg'),
+  require('../../images/animals/manul/02-thumb.jpg'),
+  require('../../images/animals/manul/03-thumb.jpg'),
+];
+
+var AnimalDetail = React.createClass({
+  render() {
+    return (
+      <AnimalTemplate firstIndex={[2]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
+        <AnimalText>
+        <Text style={styles.strong}>Lovec</Text>
+        </AnimalText>
+        <AnimalText>
+        Padá soumrak
+        </AnimalText>
+        <AnimalText>
+        já jsem vzhůru
+        </AnimalText>
+        <AnimalText>
+        i&nbsp;ty nespíš
+        </AnimalText>
+        <AnimalText>
+        
+        </AnimalText>
+        <AnimalText>
+        Mám hlad jak kocour
+        </AnimalText>
+        <AnimalText>
+        kocour přece jsem
+        </AnimalText>
+        <AnimalText>
+        no to si piš
+        </AnimalText>
+        <AnimalText>
+        
+        </AnimalText>
+        <AnimalText>
+        Kožich mám nadýchaný
+        </AnimalText>
+        <AnimalText>
+        ocas mám kroužkovaný
+        </AnimalText>
+        <AnimalText>
+        jaro je tu
+        </AnimalText>
+        <AnimalText>
+        
+        </AnimalText>
+        <AnimalText>
+        Číhám na tě za podrostem
+        </AnimalText>
+        <AnimalText>
+        jen přijď blíž a uvidíš
+        </AnimalText>
+        <AnimalText>
+        tvůj dech je pryč
+        </AnimalText>
+      </AnimalTemplate>
+    );
+  }
+});
+
+module.exports = AnimalDetail;
