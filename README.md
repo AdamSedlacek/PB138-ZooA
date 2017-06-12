@@ -9,3 +9,6 @@ Skupinový projekt předmětu PB138 - rozšíření mobilní aplikace pro ZOO, t
 
 Zadání projektu:
 Rozšíření mobilní aplikace pro Android a iOS. Implementováno v React Native.
+
+Další informace a návod k instalaci v README originálního projektu:
+https://github.com/marxsk/zobro
