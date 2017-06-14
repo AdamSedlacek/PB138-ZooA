@@ -17,6 +17,7 @@
     "react-native-hyperlink": "0.0.9",
     "react-native-lightbox": "git+https://github.com/marxsk/react-native-lightbox.git",
     "react-native-push-notification": "git+https://github.com/kenma9123/react-native-push-notification.git",
+    "react-native-sound": "github:ndbroadbent/react-native-sound#android-url-fix",
     "react-native-swiper": "^1.5.4",
     "react-navigation": "git+https://github.com/react-community/react-navigation.git",
     "react-redux": "^5.0.4",
