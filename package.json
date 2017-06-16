@@ -14,6 +14,7 @@
     "react-native-alphabetlistview": "git+https://github.com/marxsk/react-native-alphabetlistview.git",
     "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
     "react-native-collapsible": "^0.8.0",
+    "react-native-fbsdk": "^0.5.1",
     "react-native-hyperlink": "0.0.9",
     "react-native-lightbox": "git+https://github.com/marxsk/react-native-lightbox.git",
     "react-native-push-notification": "git+https://github.com/kenma9123/react-native-push-notification.git",
