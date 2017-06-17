@@ -12,6 +12,7 @@ import {
 import Text from '../components/animalText';
 import ImageLabel from '../components/imageLabel';
 import Hyperlink from 'react-native-hyperlink'
+import InPageImages from '../components/inPageImages'
 
 export default class VisitorsScene extends React.Component {
   constructor(props) {
@@ -29,6 +30,12 @@ export default class VisitorsScene extends React.Component {
   render() {
     const MIN_ZOOM = 0.5;
     const MAX_ZOOM = 5.0;
+
+    const PADDING = 20;
+        const ICON_SIZE = 64;
+        const ICON_RIGHTMARGIN = 10;
+
+        const ICON_STYLE = {width: ICON_SIZE, height: ICON_SIZE};
 
     return (
       <Image
@@ -67,6 +74,17 @@ export default class VisitorsScene extends React.Component {
           U Zoologické zahrady 46 {"\n"}
           635 00 Brno
         </Text>
+        <View style={{flex: 1, flexDirection: 'row', alignItems: 'center', paddingTop: PADDING/2, justifyContent: 'center'}}>
+                  <InPageImages
+                    sources={[
+                      require('../images/icons/facebook.png'),
+                      require('../images/icons/instagram.png'),
+                      require('../images/icons/youtube.png'),
+                      require('../images/icons/twitter.png'),
+                      require('../images/icons/tripadvisor.png'),
+                    ]}
+                    style={ICON_STYLE} marginRight={ICON_RIGHTMARGIN}/>
+                </View>
         </ScrollView>
       </Image>
     );
