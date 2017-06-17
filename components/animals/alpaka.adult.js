@@ -7,7 +7,7 @@ import AnimalText from '../animalText';
 import AnimalTemplate from '../animalTemplate';
 
 import SoundButton from '../soundButton';
-import FacebookShare from '../shareButtonFacebook.js';
+import FacebookShare from '../FBShareButton.js';
 
 const IMAGES = [
   require('../../images/animals/alpaka/01.jpg'),
