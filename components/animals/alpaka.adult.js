@@ -6,8 +6,7 @@ import InPageImage from '../inPageImage';
 import AnimalText from '../animalText';
 import AnimalTemplate from '../animalTemplate';
 
-import AnimalSound from '../animalSound';
-import TextSound from '../textSound';
+import SoundButton from '../soundButton';
 import FacebookShare from '../shareButtonFacebook.js';
 
 const IMAGES = [
@@ -22,19 +21,19 @@ const THUMBNAILS = [
   require('../../images/animals/alpaka/03-thumb.jpg'),
 ];
 
-const SOUNDS = [
-  require('../../sounds/alpaka/alpaka_sound.mp3'),
-  require('../../sounds/alpaka/alpaka_text.mp3'),
-];
+const ANIMAL_SOUND = require('../../sounds/alpaka/alpaka_sound.mp3');
+const TEXT_SOUND = require('../../sounds/alpaka/alpaka_text.mp3');
+const BUTTON_AS = 'Přehrát zvuk zvířátka!';
+const BUTTON_TS = 'Přehrát text!';
 
 var AnimalDetail = React.createClass({
   render() {
     return (
       <AnimalTemplate firstIndex={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
-        
-        <AnimalSound indexes={[0]} sounds={SOUNDS} navigator={this.props.navigator} />
+
+        <SoundButton sound={ANIMAL_SOUND} button_text={BUTTON_AS}/>
         <FacebookShare />
-        <TextSound indexes={[1]} sounds={SOUNDS} navigator={this.props.navigator} />
+        <SoundButton sound={TEXT_SOUND} button_text={BUTTON_TS}/>
      
         <AnimalText>
           Rodina lam alpak (<Text style={styles.italic}>Vicugna pacos</Text>) bydlí na tomto místě od roku 2009. Tehdy se stal vůdcem stáda samec Marcel z&nbsp;německé Zoo Stuttgart. Ukázalo se, že je to skutečně dobrý plemeník, a tak hned druhý rok přivedlo několik samic na svět mládě.
