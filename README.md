@@ -16,4 +16,5 @@ npm install react-native-sound --save<br/>
 npm install -g react-native-cli<br/>
 react-native run-android<br/>
 
-Další informace: wiki stránky a README původního projektu (viz https://github.com/marxsk/zobro)
+V případě chyb: viz podrobnější informace na wiki - instalation guide.
+Další informace: README původního projektu (viz https://github.com/marxsk/zobro)
