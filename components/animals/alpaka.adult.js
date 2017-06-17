@@ -32,8 +32,8 @@ var AnimalDetail = React.createClass({
       <AnimalTemplate firstIndex={[0]} thumbnails={THUMBNAILS} images={IMAGES} navigator={this.props.navigator}>
 
         <SoundButton sound={ANIMAL_SOUND} button_text={BUTTON_AS}/>
-        <FacebookShare />
         <SoundButton sound={TEXT_SOUND} button_text={BUTTON_TS}/>
+        <FacebookShare />
      
         <AnimalText>
           Rodina lam alpak (<Text style={styles.italic}>Vicugna pacos</Text>) bydlí na tomto místě od roku 2009. Tehdy se stal vůdcem stáda samec Marcel z&nbsp;německé Zoo Stuttgart. Ukázalo se, že je to skutečně dobrý plemeník, a tak hned druhý rok přivedlo několik samic na svět mládě.
