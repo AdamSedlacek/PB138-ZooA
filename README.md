@@ -10,10 +10,10 @@ Skupinový projekt předmětu PB138 - rozšíření mobilní aplikace pro ZOO, t
 Zadání projektu:
 Rozšíření mobilní aplikace pro Android a iOS. Implementováno v React Native.
 
-Návod k instalaci:
-npm install
-npm install react-native-sound --save
-npm install -g react-native-cli
-react-native run-android
+Návod k instalaci:<br/>
+npm install<br/>
+npm install react-native-sound --save<br/>
+npm install -g react-native-cli<br/>
+react-native run-android<br/>
 
 Další informace: wiki stránky a README původního projektu (viz https://github.com/marxsk/zobro)
