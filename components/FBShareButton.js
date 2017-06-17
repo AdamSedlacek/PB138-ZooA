@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
-import {AppRegistry, StyleSheet, Text, TouchableHighlight, View,} from 'react-native';
-import {LoginButton, ShareDialog} from 'react-native-fbsdk';
+import {StyleSheet, Text, TouchableHighlight, View,} from 'react-native';
+import {ShareDialog} from 'react-native-fbsdk';
 
-export default class RNSample extends Component {
+export default class FBShareButton extends Component {
   constructor(props) {
     super(props);
-    const shareLinkContent = {
-      contentType: 'link',
-      contentUrl: 'https://www.facebook.com/',
-      contentDescription: 'Facebook sharing is easy!'
-    };
 
-    this.state = {shareLinkContent: shareLinkContent,};
+    this.state = {shareLinkContent: this.props.shareLinkContent,};
   }
 
   shareLinkWithShareDialog() {
@@ -39,22 +34,8 @@ export default class RNSample extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <LoginButton
-          publishPermissions={["publish_actions"]}
-          onLoginFinished={
-            (error, result) => {
-              if (error) {
-                alert("Login failed with error: " + error.message);
-              } else if (result.isCancelled) {
-                alert("Login was cancelled");
-              } else {
-                alert("Login was successful with permissions: " + result.grantedPermissions)
-              }
-            }
-          }
-          onLogoutFinished={() => alert("User logged out")}/>
         <TouchableHighlight onPress={this.shareLinkWithShareDialog.bind(this)}>
-          <Text style={styles.shareText}>Share link with ShareDialog</Text>
+          <Text style={styles.shareText}>Sdílet na Facebooku!</Text>
         </TouchableHighlight>
       </View>
     );
@@ -66,10 +47,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#3b5998',
   },
   shareText: {
     fontSize: 20,
     margin: 10,
+    color: '#ffffff',
   },
 });

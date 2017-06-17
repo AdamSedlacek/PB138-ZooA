@@ -25,6 +25,12 @@ const ANIMAL_SOUND = require('../../sounds/alpaka/alpaka_sound.mp3');
 const TEXT_SOUND = require('../../sounds/alpaka/alpaka_text.mp3');
 const BUTTON_AS = 'Přehrát zvuk zvířátka!';
 const BUTTON_TS = 'Přehrát text!';
+const LINK_CONTENT = {
+contentType: 'link',
+contentUrl: 'http://www.zoobrno.cz/zvirata-v-zoo/chovana-zvirata/savci/vicugna-pacos',
+quote: 'Alpaka - Zoo Brno'
+};
+
 
 var AnimalDetail = React.createClass({
   render() {
@@ -33,7 +39,7 @@ var AnimalDetail = React.createClass({
 
         <SoundButton sound={ANIMAL_SOUND} button_text={BUTTON_AS}/>
         <SoundButton sound={TEXT_SOUND} button_text={BUTTON_TS}/>
-        <FacebookShare />
+        <FacebookShare shareLinkContent={LINK_CONTENT}/>
      
         <AnimalText>
           Rodina lam alpak (<Text style={styles.italic}>Vicugna pacos</Text>) bydlí na tomto místě od roku 2009. Tehdy se stal vůdcem stáda samec Marcel z&nbsp;německé Zoo Stuttgart. Ukázalo se, že je to skutečně dobrý plemeník, a tak hned druhý rok přivedlo několik samic na svět mládě.
