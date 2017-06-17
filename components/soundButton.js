@@ -78,6 +78,14 @@ export default class SoundButton extends React.Component {
                     }
                 });
         }
+        else{
+            let oneSoundMess = {
+                             title: 'Ukončite prosím přehravani první zvukové stopy',
+                             vibrate: true,
+                             message: ('Následne pujde spustit druhá'),
+                           };
+                           PushNotification.localNotification(oneSoundMess);
+        }
         }
 
     /**
