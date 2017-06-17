@@ -74,18 +74,41 @@ export default class VisitorsScene extends React.Component {
           U Zoologické zahrady 46 {"\n"}
           635 00 Brno
         </Text>
-        <View style={{flex: 1, flexDirection: 'row', alignItems: 'center', paddingTop: PADDING/2, justifyContent: 'center'}}>
-                  <InPageImages
-                    sources={[
-                      require('../images/icons/facebook.png'),
-                      require('../images/icons/instagram.png'),
-                      require('../images/icons/youtube.png'),
-                      require('../images/icons/twitter.png'),
-                      require('../images/icons/tripadvisor.png'),
-                    ]}
-                    style={ICON_STYLE} marginRight={ICON_RIGHTMARGIN}/>
-                </View>
-        </ScrollView>
+        <View style={{flex: 1, flexDirection: 'row', alignItems: 'center', paddingTop: PADDING/2,
+         justifyContent: 'center'}}>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.facebook.com/ZooBrno/')}>
+            <Image source = { require('../images/icons/facebook.png')}
+            style={ICON_STYLE} marginRight={ICON_RIGHTMARGIN}/>
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.instagram.com/zoobrno/')}>
+            <Image source = { require('../images/icons/instagram.png')}
+            style={ICON_STYLE} marginRight={ICON_RIGHTMARGIN}/>
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.youtube.com/user/zoobrnocz/feed')}>
+            <Image source = { require('../images/icons/youtube.png')}
+            style={ICON_STYLE} marginRight={ICON_RIGHTMARGIN}/>
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://twitter.com/ZooBrnoCZ')}>
+            <Image source = { require('../images/icons/twitter.png')}
+            style={ICON_STYLE} marginRight={ICON_RIGHTMARGIN}/>
+          </TouchableHighlight>
+          <TouchableHighlight onPress={() => Linking.openURL('https://www.tripadvisor.cz/Attraction_Review-g274714-d277582-Reviews-Zoo_Brno-Brno_South_Moravian_Region_Moravia.html')}>
+             <Image source = {require('../images/icons/tripadvisor.png')}
+             style={ICON_STYLE} marginRight={ICON_RIGHTMARGIN}/>
+           </TouchableHighlight>
+         </View>
+         <TouchableHighlight onPress={() => Linking.openURL('http://www.zoobrno.cz/')}>
+         <Text style={
+         {textAlign: 'center',
+         color: 'yellowgreen',
+         fontSize: 32,
+         textDecorationLine: 'underline',
+         fontWeight: 'bold'}}>
+         {"\n"}
+         www.zoobrno.cz
+         </Text>
+         </TouchableHighlight>
+         </ScrollView>
       </Image>
     );
   }
