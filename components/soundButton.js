@@ -3,7 +3,7 @@ import {Button} from 'react-native';
 import PushNotification from 'react-native-push-notification';
 
 const Sound = require('react-native-sound');
-
+var activeSound = false; //forbid to play more than 1 sound at once
 
 /**
 * Class SoundButton
@@ -36,7 +36,7 @@ export default class SoundButton extends React.Component {
             permissions: {
                 alert: true,
                 badge: false,
-                sound: false // this doesn´t work. Why?
+                sound: false // works only in iOS
             },
         });
     }
@@ -47,6 +47,7 @@ export default class SoundButton extends React.Component {
      */
      _handlePress1() {
              console.log('PressedStart!');
+             if (!activeSound){
              if (this.showAlert){
                 let z = {
                      title: 'Použijte prosím sluchátká!',
@@ -58,6 +59,7 @@ export default class SoundButton extends React.Component {
                    }
              this.isPlaying = true;
              this.forceUpdate();
+             activeSound = true;
              this.textS = new Sound(this.props.sound, (error) => {
                   if (error) {
                         console.log('failed to load the sound', error);
@@ -66,6 +68,7 @@ export default class SoundButton extends React.Component {
                             if (success) {
                                  console.log('successfully finished playing');
                                  this.isPlaying = false;
+                                 activeSound = false;
                             } else {
                                  console.log('playback failed due to audio decoding errors');
                             }
@@ -74,6 +77,7 @@ export default class SoundButton extends React.Component {
                        });
                     }
                 });
+        }
         }
 
     /**
@@ -85,6 +89,7 @@ export default class SoundButton extends React.Component {
         this.textS.stop();
         this.forceUpdate();
         this.isPlaying = false;
+        activeSound = false;
     }
 
 
