@@ -8,7 +8,10 @@ export default class SoundButton extends React.Component {
     constructor(props, context) {
         super(props, context);
     }
-
+    /**
+     * 1st function of the button
+     * plays the sound
+     */
     _handlePress1() {
          console.log('PressedStart!', isPlaying);
          this.isPlaying = true;
@@ -31,6 +34,10 @@ export default class SoundButton extends React.Component {
             });
     }
 
+    /**
+     * 2nd function of the button
+     * stops the sound
+     */
     _handlePress2() {
         console.log('PressedStop!');
         this.textS.stop();
@@ -39,7 +46,12 @@ export default class SoundButton extends React.Component {
     }
 
 
-
+/**
+ * Rendering a button
+ * Distinguishes whether the sound is playing or not
+ *
+ * @see https://github.com/ide/react-native-button
+ */
 render() {
     if (!this.isPlaying) {
         return (
