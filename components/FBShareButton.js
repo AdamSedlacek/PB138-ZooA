@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {AppRegistry, StyleSheet, Text, TouchableHighlight, View,} from 'react-native';
 import {LoginButton, ShareDialog} from 'react-native-fbsdk';
 
-class RNSample extends Component {
+export default class RNSample extends Component {
   constructor(props) {
     super(props);
     const shareLinkContent = {
