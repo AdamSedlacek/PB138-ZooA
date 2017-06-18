@@ -1,6 +1,9 @@
 # PB138-ZooA
 Skupinový projekt předmětu PB138 - rozšíření mobilní aplikace pro ZOO, tým A
 
+Wiki stránky projektu:
+https://adamsedlacek.github.io/PB138-ZooA/
+
 Členovia týmu:
 - Katarína Zubnárová
 - Kamila Chytalová
