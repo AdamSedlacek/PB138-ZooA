@@ -30,9 +30,16 @@ public class MainActivity extends ReactActivity {
     private MediaPlayer mMediaPlayer;
     private AudioManager mAudioManager;
 
+
+    /**
+     * Called when the activity is first created.
+     *
+     * @param savedInstanceState  contains the activity's previously frozen state, if there was one.
+     *
+     */
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //setContentView(R.layout.activity_main);
+
 
         mAudioManager = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
         mAudioManager.setSpeakerphoneOn(false);
@@ -42,6 +49,13 @@ public class MainActivity extends ReactActivity {
         registerReceiver(mBroadcastReceiver, intentFilter);
     }
 
+    /**
+     * Stops the mMediaPlayer if headset have been unplugged
+     *
+     * @param context the context in which the receiver is running.
+     * @param intent the intent broadcast being received.     *
+     *
+     */
     private BroadcastReceiver mBroadcastReceiver = new BroadcastReceiver() {
         @Override public void onReceive(Context context, Intent intent) {
             if (intent.getAction().equals(Intent.ACTION_HEADSET_PLUG)) {
@@ -61,6 +75,12 @@ public class MainActivity extends ReactActivity {
         }
     };
 
+    /**
+     * Starts the mMediaPlayer with required mp3
+     *
+     * @param view View from which the sound is extracted
+     *
+     */
     public void playSound(View view) {
         if (mAudioManager.isWiredHeadsetOn()) {
             mMediaPlayer = MediaPlayer.create(this, R.raw.sound1);
