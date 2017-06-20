@@ -2,7 +2,7 @@
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN"
 "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd">
 <article>
-  <articleinfo>
+  <info>
     <title>Projekt z predmetu PB138 - Záverečná správa</title>
     
     <author>
@@ -12,7 +12,7 @@
       </affiliation>
     </author>
     <pubdate>20.06.2017</pubdate>
-  </articleinfo>
+  </info>
 
   <section>
     <title>Projekt: Rozšírenie mobilnej aplikácie pre Zoo Brno - Team
