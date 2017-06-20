@@ -11,7 +11,6 @@
         <orgname>Fakulta Informatiky MU</orgname>
       </affiliation>
     </author>
-    <pubdate>20.06.2017</pubdate>
   </info>
 
   <section>
@@ -47,7 +46,7 @@
       ale po nejakej dobe, počas ktorej sa mi podarilo sa viac zorientovať v
       implementácii už vyvynutej aplikácie a po oboznámení sa možnosťami,
       ktoré React ponúka, sa mi podarilo funkconalitu naimplementovať tak, aby
-      som vytvorila jeden súbor <literal>soundButton.js</literal>, ktorý
+      som vytvorila jeden súbor soundButton.js, ktorý
       reprezentuje všeobecné tlačítko, ktorý prehráva zvuk.</para>
 
       <para>Na prehrávanie zvuku som použila modul react-native-sound. Vrámci
