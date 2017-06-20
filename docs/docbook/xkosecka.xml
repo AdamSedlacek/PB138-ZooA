@@ -23,7 +23,7 @@
             jednotlivé rozšírenia aplikácie.</para>
         <para>Ako prepojenie sociálnych sietí som naimplementovala zdieľanie 
             stránky zvieraťa na Facebook stránku používateľa, po kliknutí na 
-            tlačítko <literal>FBShareButton.js</literal>. Bolo potrebné pridať a 
+            tlačítko FBShareButton.js. Bolo potrebné pridať a 
             nakonfigurovať Facebook SDK pre Android projekt v React Native, 
             získať Facebook App ID a prepojiť ho s aplikáciou. Samotné zdieľanie 
             na Facebook je implementované použitím triedy ShareDialog 
@@ -33,7 +33,6 @@
             odkazov na sociálne siete, na ktorých má Zoo Brno založený účet ako 
             aj na samotné webové stránky Zoo Brno. Sociálne siete sú odkazované 
             z príslušnej ikony danej sociálnej siete na stránke s informáciami 
-            <emphasis>Pro návštěvníky</emphasis>, ktorá je prístupná z hlavného 
-            menu aplikácie.</para>
+            Pro návštěvníky, ktorá je prístupná z hlavného menu aplikácie.</para>
     </section>
 </article>
