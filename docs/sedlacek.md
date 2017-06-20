@@ -10,8 +10,8 @@
 - V rámci projektu rozšíření mobilní aplikace brněnské zoo jsem se
 ujal vedoucí role celkem čtyřčlenného týmu. Úkolem našeho projektu bylo
 přidání několika nových funkcí k již existující aplikaci dostupné na
-githubu v repositáři pod záštitou zadavatele tohoto projektu - Markem
-Grácem.
+githubu v repositáři pod záštitou zadavatele tohoto projektu - Marka
+Gráce.
 
 ### Rozdělení činností
 
