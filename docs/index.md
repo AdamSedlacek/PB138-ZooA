@@ -16,4 +16,4 @@ Cílem projektu je rozšířit původní aplikaci brněnské zoo o některé nov
 - [Klára Košecká](https://adamsedlacek.github.io/PB138-ZooA/kosecka) - tlačítko sdílení
 
 ### App Release
-- [v1.0-beta | 18.06.2017](https://github.com/AdamSedlacek/PB138-ZooA/releases/tag/v1.0-beta) - nová tlačítka
+- [v1.0-beta](https://github.com/AdamSedlacek/PB138-ZooA/releases/tag/v1.0-beta) - nová tlačítka (18.06.2017)
