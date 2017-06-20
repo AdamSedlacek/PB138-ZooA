@@ -16,30 +16,24 @@
   
     <section>
         <title>Záverečná správa</title>
-        <para>
-            Pri práci na projekte som sa podieľala na tvorbe prepojenia 
+        <para>Pri práci na projekte som sa podieľala na tvorbe prepojenia 
             aplikácie so sociálnymi sieťami. Na začiatku som spolu s ostatnými 
             členmi týmu naštudovala aktuálny kód aplikácie. Prešli sme si úvod 
             do React Native a spoločne sme vytvorili 3 komponenty - tlačítka pre 
-            jednotlivé rozšírenia aplikácie.
-        </para>
-        <para>
-            Ako prepojenie sociálnych sietí som naimplementovala zdieľanie 
+            jednotlivé rozšírenia aplikácie.</para>
+        <para>Ako prepojenie sociálnych sietí som naimplementovala zdieľanie 
             stránky zvieraťa na Facebook stránku používateľa, po kliknutí na 
             tlačítko <literal>FBShareButton.js</literal>. Bolo potrebné pridať a 
             nakonfigurovať Facebook SDK pre Android projekt v React Native, 
             získať Facebook App ID a prepojiť ho s aplikáciou. Samotné zdieľanie 
             na Facebook je implementované použitím triedy ShareDialog 
             importovanej z react-native-fbsdk modulu. Metódam tejto triedy sa 
-            ako atribút poskytne nami definovaný obsah v podobe JSON objektu.
-        </para>
-        <para>
-            Druhou časťou prepojenia so sociálnymi sieťami bolo vytvorenie 
+            ako atribút poskytne nami definovaný obsah v podobe JSON objektu.</para>
+        <para>Druhou časťou prepojenia so sociálnymi sieťami bolo vytvorenie 
             odkazov na sociálne siete, na ktorých má Zoo Brno založený účet ako 
             aj na samotné webové stránky Zoo Brno. Sociálne siete sú odkazované 
             z príslušnej ikony danej sociálnej siete na stránke s informáciami 
             <emphasis>Pro návštevníky</emphasis>, ktorá je prístupná z hlavného 
-            menu aplikácie.
-        </para>
+            menu aplikácie.</para>
     </section>
 </article>
