@@ -1,5 +1,9 @@
 # Závěrečná zpráva k projektu Zoo
 
+**Title:** Projekt z predmetu PB138 - Záverečná správa<br xmlns="http://www.w3.org/1999/xhtml"/>
+**Author:** Katarína Zubnárová<br xmlns="http://www.w3.org/1999/xhtml"/>
+**Organization:** Fakulta Informatiky MU<br xmlns="http://www.w3.org/1999/xhtml"/>
+
 ## Zpráva
 
 ### Projekt: Rozšírenie mobilnej aplikácie pre Zoo Brno - Team A
