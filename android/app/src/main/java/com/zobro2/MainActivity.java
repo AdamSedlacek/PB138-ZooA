@@ -21,6 +21,9 @@ public class MainActivity extends ReactActivity {
         return "zobro2";
     }
 
+    /**
+     * Provides the ability to receive application events.
+     */
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
