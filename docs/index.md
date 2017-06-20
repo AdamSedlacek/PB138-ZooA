@@ -10,7 +10,7 @@ Cílem projektu je rozšířit původní aplikaci brněnské zoo o některé nov
 - Tlačítko pro sdílení na sociálních sítích
 
 ### Členové týmu 
-- Adam Sedláček - vedení projektu a dokumentace
-- Katarína Zubnárová - tlačítka přehrávání
-- Kamila Chytalová - funkce ověření připojení sluchátek
-- Klára Košecká - tlačítko sdílení
+- [Adam Sedláček](https://adamsedlacek.github.io/PB138-ZooA/sedlacek) - vedení projektu a dokumentace
+- [Katarína Zubnárová](https://adamsedlacek.github.io/PB138-ZooA/zubnarova) - tlačítka přehrávání
+- [Kamila Chytalová](https://adamsedlacek.github.io/PB138-ZooA/chytalova) - funkce ověření připojení sluchátek
+- [Klára Košecká](https://adamsedlacek.github.io/PB138-ZooA/kosecka) - tlačítko sdílení
