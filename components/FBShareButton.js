@@ -30,13 +30,13 @@ export default class FBShareButton extends Component {
     ).then(
       function(result) {
         if (result.isCancelled) {
-          alert('Share cancelled');
+          alert('Sdílení zrušeno.');
         } else {
-          alert('Share success with postId: ' + result.postId);
+          alert('Úspěšně sdíleno: ' + result.postId);
         }
       },
       function(error) {
-        alert('Share fail with error: ' + error);
+        alert('Sdílení se nezdařilo! Chyba: ' + error);
       }
     );
   }
