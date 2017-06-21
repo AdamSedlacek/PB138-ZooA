@@ -1,30 +1,30 @@
 import React, { Component } from 'react';
 import {StyleSheet, Text, TouchableHighlight, View,} from 'react-native';
-import {ShareDialog} from 'react-native-fbsdk';
+import {LoginManager, ShareDialog} from 'react-native-fbsdk';
 
 /**
 * Class FBShareButton
 * creates a button for sharing on Facebook
-* needs to get the shareLinkContent in props: this.props.shareLinkContent
+* needs to get the shareContent in props: this.props.shareContent
 */
 export default class FBShareButton extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {shareLinkContent: this.props.shareLinkContent,};
+    this.state = {shareContent: this.props.shareContent,};
   }
 
   /**
-  * This function detects if the shareLinkContent can be displayed,
-  * and then tries to share the shareLinkContent.
+  * This function detects if the shareContent can be displayed,
+  * and then tries to share the shareContent.
   * As the result is shown alert message about success of the method.
   */
-  shareLinkWithShareDialog() {
+  shareContentWithShareDialog() {
     var tmp = this;
-    ShareDialog.canShow(this.state.shareLinkContent).then(
+    ShareDialog.canShow(this.state.shareContent).then(
       function(canShow) {
         if (canShow) {
-          return ShareDialog.show(tmp.state.shareLinkContent);
+          return ShareDialog.show(tmp.state.shareContent);
         }
       }
     ).then(
@@ -38,6 +38,10 @@ export default class FBShareButton extends Component {
       function(error) {
         alert('Sdílení se nezdařilo! Chyba: ' + error);
       }
+    ).then( //log out from facebook when share dialog is closed - can be deleted
+      function(shareContentWithShareDialog) {
+      LoginManager.logOut();
+      }
     );
   }
 
@@ -47,7 +51,7 @@ export default class FBShareButton extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <TouchableHighlight onPress={this.shareLinkWithShareDialog.bind(this)}>
+        <TouchableHighlight onPress={this.shareContentWithShareDialog.bind(this)}>
           <Text style={styles.shareText}>Sdílet na Facebooku!</Text>
         </TouchableHighlight>
       </View>
